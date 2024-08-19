@@ -68,7 +68,7 @@ class GlobalButton extends StatelessWidget {
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
                       fontSize: 20,
-                      color: color,
+                      color: backgroundColor,
                     ),
                   ),
                 ),
