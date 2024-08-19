@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 
 // ignore: must_be_immutable
 class GlobalButton extends StatelessWidget {
@@ -49,7 +50,6 @@ class GlobalButton extends StatelessWidget {
             child: ElevatedButton(
               onPressed: whenPressed,
               child: Container(
-                color: color,
                 height: 55,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(
