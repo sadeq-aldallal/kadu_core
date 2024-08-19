@@ -3,22 +3,22 @@ import 'package:flutter/material.dart';
 // ignore: must_be_immutable
 class GlobalButton extends StatelessWidget {
   dynamic whenPressed;
-  String label;
   bool outLine;
   bool isLoading;
   double borderRadius;
   Color color;
   Color backgroundColor;
+  Text buttonLabel;
 
   GlobalButton({
     super.key,
-    required this.label,
     this.isLoading = false,
     this.whenPressed,
     this.outLine = false,
     this.borderRadius = 12,
     required this.color,
     required this.backgroundColor,
+    required this.buttonLabel,
   });
   @override
   Widget build(BuildContext context) {
@@ -39,14 +39,7 @@ class GlobalButton extends StatelessWidget {
                   ),
                 ),
                 child: Center(
-                  child: Text(
-                    label,
-                    style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                      fontSize: 20,
-                      color: color,
-                    ),
-                  ),
+                  child: buttonLabel,
                 ),
               ),
             ),
@@ -64,14 +57,7 @@ class GlobalButton extends StatelessWidget {
                   ),
                 ),
                 child: Center(
-                  child: Text(
-                    label,
-                    style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                      fontSize: 20,
-                      color: backgroundColor,
-                    ),
-                  ),
+                  child: buttonLabel,
                 ),
               ),
             ),
