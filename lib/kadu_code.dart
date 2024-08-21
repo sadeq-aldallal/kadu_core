@@ -1,2 +1,3 @@
-export './src/widgets/global_list_tile.widget.dart';
-export './src/widgets/global_button.dart';
+export 'src/widgets/list_tile.widget.dart';
+export 'src/widgets/button.dart';
+export 'src/widgets/text_field.dart';
